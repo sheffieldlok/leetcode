@@ -8,10 +8,8 @@ class Solution:
                     return False
                 else:
                     dict[board[i][j]] = 1
-                print(dict)
         
         # check each column
-        print("")
         for i in range(len(board)):
             dict = {}
             for j in range(len(board)):
@@ -19,10 +17,8 @@ class Solution:
                     return False
                 else:
                     dict[board[j][i]] = 1
-                print(dict)
                     
         # check each 3x3 box
-        print("")
         for x in range(len(board) // 3):
             for i in range(len(board) // 3):
                 dict = {}
@@ -32,7 +28,5 @@ class Solution:
                             return False
                         else:
                             dict[board[j+ 3*x][k+3*i]] = 1
-                        print(dict)
                         
         return True
-        
