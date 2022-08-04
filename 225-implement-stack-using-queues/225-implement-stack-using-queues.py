@@ -18,8 +18,6 @@ class MyStack:
     def empty(self):
         return not len(self._queue)
         
-
-
 # Your MyStack object will be instantiated and called as such:
 # obj = MyStack()
 # obj.push(x)
